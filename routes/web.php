@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test/{nama}', function($hai){
+    $awalan = $hai;
+    return $awalan;
+});
+
+Route::get('/index', 'Controller@index');
+Route::get('/register', 'Controller@register');
+Route::post('/selamat-datang', 'Controller@selamat_datang');
