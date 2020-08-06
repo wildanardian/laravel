@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('items.main');
 });
 
 Route::get('/test/{nama}', function($hai){
@@ -23,3 +23,7 @@ Route::get('/test/{nama}', function($hai){
 Route::get('/index', 'Controller@index');
 Route::get('/register', 'Controller@register');
 Route::post('/selamat-datang', 'Controller@selamat_datang');
+
+Route::get('/data-tables', function(){
+    return view('items.index');
+});
