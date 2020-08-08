@@ -30,4 +30,6 @@ class Controller extends BaseController
         return view('selamat-datang', compact('nama_lengkap'));
     }
 
+    
+
 }
